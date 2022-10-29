@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/backFragment"
         android:name="com.example.sharedviewmodelprac.BackFragment"
-        android:label="fragment_back"
+        android:label="@string/back"
         tools:layout="@layout/fragment_back" >
         <action
             android:id="@+id/action_backFragment_to_chestFragment"
@@ -17,7 +17,7 @@
     <fragment
         android:id="@+id/chestFragment"
         android:name="com.example.sharedviewmodelprac.ChestFragment"
-        android:label="fragment_chest"
+        android:label="@string/chest"
         tools:layout="@layout/fragment_chest" >
         <action
             android:id="@+id/action_chestFragment_to_legFragment"
@@ -26,7 +26,7 @@
     <fragment
         android:id="@+id/legFragment"
         android:name="com.example.sharedviewmodelprac.LegFragment"
-        android:label="fragment_leg"
+        android:label="@string/leg"
         tools:layout="@layout/fragment_leg" >
         <action
             android:id="@+id/action_legFragment_to_finalFragment"

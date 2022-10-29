@@ -4,6 +4,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+        <variable
+            name="sharedVM"
+            type="com.example.sharedviewmodelprac.model.SharedViewModel" />
 
     </data>
 
@@ -25,18 +28,21 @@
                 android:id="@+id/set_three"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@{sharedVM.chestSetList[0].toString()}"
                 tools:text="삼세트" />
 
             <RadioButton
                 android:id="@+id/set_five"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@{sharedVM.chestSetList[1].toString()}"
                 tools:text="오세트" />
 
             <RadioButton
                 android:id="@+id/set_seven"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@{sharedVM.chestSetList[2].toString()}"
                 tools:text="칠세트" />
         </RadioGroup>
 

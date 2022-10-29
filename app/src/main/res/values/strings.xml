@@ -6,4 +6,7 @@
     <string name="health_two">2번 운동 세트 수</string>
     <string name="health_three">3번 운동 세트 수</string>
 
+    <string name="back">등운동</string>
+    <string name="chest">가슴운동</string>
+    <string name="leg">하체운동</string>
 </resources>

@@ -7,11 +7,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.sharedviewmodelprac.databinding.FragmentBackBinding//데이터바인딩 클래스
+import com.example.sharedviewmodelprac.model.SharedViewModel
 
 class BackFragment : Fragment() {
     var binding:FragmentBackBinding?=null
+    private val sharedViewModel:SharedViewModel by activityViewModels()
 
 
     override fun onCreateView(
@@ -28,6 +31,7 @@ class BackFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         binding?.apply{
             goNext.setOnClickListener{goNextScreen()}//apply 덕분에 앞에 'binding?.' 생략됨
+            sharedVM = sharedViewModel
         }
     }
 
