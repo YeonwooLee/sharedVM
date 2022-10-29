@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">sharedViewModelPrac</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="health_one">1번 운동 세트 수</string>
+    <string name="health_two">2번 운동 세트 수</string>
+    <string name="health_three">3번 운동 세트 수</string>
+
+</resources>
