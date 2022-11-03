@@ -30,12 +30,18 @@ class ChestFragment : Fragment() {
         binding?.apply{
             goNext.setOnClickListener { goNextScreen() }
             sharedVM = sharedViewModel
+            chestFG=this@ChestFragment
 
         }
     }
 
     fun goNextScreen(){
         findNavController().navigate(R.id.action_chestFragment_to_legFragment)
+    }
+
+    fun cancel(){
+        sharedViewModel.reset()
+        findNavController().navigate(R.id.action_chestFragment_to_backFragment)
     }
 
 }

@@ -3,10 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/androidTutorial/sharedVM/app/src/main/res/layout/fragment_back.xml" value="0.4" />
-        <entry key="..\:/androidTutorial/sharedVM/app/src/main/res/layout/fragment_chest.xml" value="0.10885416666666667" />
-        <entry key="..\:/androidTutorial/sharedVM/app/src/main/res/layout/fragment_final.xml" value="0.10885416666666667" />
-        <entry key="..\:/androidTutorial/sharedVM/app/src/main/res/layout/fragment_leg.xml" value="0.10885416666666667" />
+        <entry key="..\:/androidTutorial/sharedVM/app/src/main/res/layout/activity_main.xml" value="0.1125" />
+        <entry key="..\:/androidTutorial/sharedVM/app/src/main/res/layout/fragment_back.xml" value="0.2747395833333333" />
+        <entry key="..\:/androidTutorial/sharedVM/app/src/main/res/layout/fragment_chest.xml" value="0.264" />
+        <entry key="..\:/androidTutorial/sharedVM/app/src/main/res/layout/fragment_final.xml" value="0.2747395833333333" />
+        <entry key="..\:/androidTutorial/sharedVM/app/src/main/res/layout/fragment_leg.xml" value="0.264" />
       </map>
     </option>
   </component>

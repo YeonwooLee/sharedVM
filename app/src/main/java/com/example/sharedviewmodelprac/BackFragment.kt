@@ -30,8 +30,9 @@ class BackFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding?.apply{
-            goNext.setOnClickListener{goNextScreen()}//apply 덕분에 앞에 'binding?.' 생략됨
+//            goNext.setOnClickListener{goNextScreen()}//apply 덕분에 앞에 'binding?.' 생략됨
             sharedVM = sharedViewModel
+            backFragment=this@BackFragment
         }
     }
 

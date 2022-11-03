@@ -7,6 +7,9 @@
         <variable
             name="sharedVM"
             type="com.example.sharedviewmodelprac.model.SharedViewModel" />
+        <variable
+            name="legFG"
+            type="com.example.sharedviewmodelprac.LegFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -28,6 +31,8 @@
             android:id="@+id/set_one"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="@{sharedVM.legSet0.toString()}"
             app:layout_constraintStart_toEndOf="@id/health_one"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="temp"
@@ -47,6 +52,9 @@
             android:id="@+id/set_two"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="@{sharedVM.legSet1.toString()}"
+
             app:layout_constraintStart_toEndOf="@id/health_two"
             app:layout_constraintTop_toBottomOf="@id/health_one"
             tools:text="temp" />
@@ -64,19 +72,33 @@
             android:id="@+id/set_three"
             android:layout_width="100dp"
             android:layout_height="wrap_content"
+            android:inputType="number"
+            android:text="@{sharedVM.legSet2.toString()}"
             app:layout_constraintStart_toEndOf="@id/health_three"
             app:layout_constraintTop_toBottomOf="@id/health_two"
             tools:text="temp" />
 
-
+        <Button
+            android:onClick="@{()->legFG.cancel()}"
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toStartOf="@id/go_next"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/go_next"/>
         <Button
             android:id="@+id/go_next"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_marginEnd="16dp"
             android:layout_height="wrap_content"
             android:text="다음페이지로"
 
             app:layout_constraintTop_toBottomOf="@id/health_three"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cancel_button"
             app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,9 @@
         <variable
             name="sharedVM"
             type="com.example.sharedviewmodelprac.model.SharedViewModel" />
+        <variable
+            name="backFragment"
+            type="com.example.sharedviewmodelprac.BackFragment" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -28,6 +31,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@{sharedVM.backSetList[0].toString()}"
+                android:onClick="@{()->sharedVM.setBackSet(sharedVM.backSetList[0])}"
+                android:checked="@{sharedVM.backSet.equals(sharedVM.backSetList[0])}"
                 tools:text="삼세트(tl" />
 
             <RadioButton
@@ -35,6 +40,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@{sharedVM.backSetList[1].toString()}"
+                android:onClick="@{()->sharedVM.setBackSet(sharedVM.backSetList[1])}"
+                android:checked="@{sharedVM.backSet.equals(sharedVM.backSetList[1])}"
                 tools:text="오세트" />
 
             <RadioButton
@@ -42,6 +49,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@{sharedVM.backSetList[2].toString()}"
+                android:onClick="@{()->sharedVM.setBackSet(sharedVM.backSetList[2])}"
+                android:checked="@{sharedVM.backSet.equals(sharedVM.backSetList[2])}"
                 tools:text="칠세트" />
         </RadioGroup>
 
@@ -50,6 +59,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="다음페이지로(시작)"
+            android:onClick="@{()->backFragment.goNextScreen()}"
             app:layout_constraintTop_toBottomOf="@id/back_radio_group"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" />
